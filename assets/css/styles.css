@@ -6,6 +6,10 @@
   --primary-color: #0f1b4c;
 }
 
+html,
+body {
+  scroll-behavior: smooth;
+}
 html {
   font-size: 62.5%;
 }
@@ -13,12 +17,6 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Poppins";
-}
-
-.hero-wrap {
-  background: #e6f0ff;
-  width: 100vw;
-  height: 100vh;
 }
 
 /*-------------- General  ---------------*/
@@ -129,9 +127,16 @@ body {
 }
 
 /*-------------- Hero Info  ---------------*/
+.hero-wrap {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background: #e6f0ff;
+  width: 100vw;
+  height: 85vh;
+}
 
 .hero .info {
-  padding-top: 130px;
   width: 50%;
 }
 
@@ -177,7 +182,6 @@ body {
 
 .client {
   margin-top: 122px;
-  margin-bottom: 80px;
 }
 
 .client .row-desc {
@@ -205,6 +209,9 @@ body {
 }
 
 /*=========== Guides ============*/
+.guides {
+  padding-top: 80px;
+}
 
 .guides h2 {
   position: relative;
@@ -287,7 +294,7 @@ body {
 /*=========== Properties ============*/
 
 .properties {
-  padding: 110px 0;
+  padding: 80px 0;
   background: #f5fafe;
 }
 
@@ -400,7 +407,6 @@ body {
 .statistics {
   margin-top: 75px;
   padding-top: 50px;
-  padding-bottom: 50px;
 }
 
 .statistics .general-container {
@@ -537,7 +543,7 @@ body {
 /*=========== Subscription ============*/
 
 .subscription {
-  margin-top: 101px;
+  padding-top: 150px;
   position: relative;
 }
 
