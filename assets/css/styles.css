@@ -15,7 +15,7 @@ body {
   font-family: "Poppins";
 }
 
-.header {
+.hero-wrap {
   background: #e6f0ff;
   width: 100vw;
   height: 100vh;
@@ -63,21 +63,32 @@ body {
 
 /*-------------- Header  ---------------*/
 
-.header img {
-  margin-right: 64px;
+.fixed-header {
+  background: #e6f0ff;
+  position: sticky;
+  top: -26px;
+  padding-top: 26px;
+  z-index: 1;
 }
 
-.header ul a {
+.fixed-header .nav {
+  padding: 10px 0;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav ul a {
   font-size: 1.4rem;
   font-weight: 500;
   color: #4f5361;
   text-decoration: none;
 }
 
-.header nav {
-  display: flex;
-  align-items: center;
-  padding-top: 38px;
+.nav img {
+  margin-right: 64px;
 }
 
 .nav__menu {
@@ -120,7 +131,7 @@ body {
 /*-------------- Hero Info  ---------------*/
 
 .hero .info {
-  margin-top: 130px;
+  padding-top: 130px;
   width: 50%;
 }
 
@@ -157,6 +168,7 @@ body {
 .hero img {
   margin: 0;
   position: absolute;
+  width: 35%;
   bottom: 0;
   right: calc((100vw - 1110px) / 2 - 100px);
 }
