@@ -132,8 +132,7 @@ body {
   align-items: center;
   position: relative;
   background: #e6f0ff;
-  width: 100vw;
-  height: 85vh;
+  height: calc(100vh - 86px);
 }
 
 .hero .info {
